@@ -10,3 +10,9 @@
 
 <h3>@Model.Detail</h3>
 
+<ul>
+    <li>Genre: @Model.GenreType.Name</li>
+    <li>Release Date: @Model.RealeaseDateTime.ToShortDateString()</li>
+    <li>Date Added: @Model.AddDateTime.ToShortDateString()</li>
+    <li>Number in stock: @Model.Stock</li>
+</ul>

@@ -6,18 +6,15 @@ using System.Web;
 
 namespace Vidly.Models
 {
-	public class Movie
+	public class Customer
 	{
 		public int Id { get; set; }
 		[Required]
 		[StringLength(255)]
 		public string Name { get; set; }
-		[Required]
-		[StringLength(255)]
-		public string Detail { get; set; }
-		public GenreType GenreType { get; set; }
-		public DateTime RealeaseDateTime { get; set; }
-		public DateTime AddDateTime { get; set; }
-		public int Stock { get; set; }
+		public bool IsSubscribedToNewsletter { get; set; }
+		public MembershipType MembershipType { get; set; }
+		public byte MembershipTypeId { get; set; }
+		public DateTime? Birthdate { get; set; }
 	}
 }
